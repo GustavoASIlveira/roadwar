@@ -22,6 +22,13 @@ var lvl2State = {
 		this.player.anchor.set(.5);
 		this.player.body.setSize(28,58,5,5);
 		this.player.canPlay = false;
+		
+		//Atributos para mover com botões
+		this.player.mvLeft = false;
+		this.player.mvRight = false;
+		this.player.mvUp = false;
+		this.player.mvDown = false;
+		
 		//em 0.5s o player começa a entrar na tela, alcançando seu ponto ideal aos 2s
 		game.time.events.add(500,function(){
 			game.add.tween(this.player).to({y:500},1500).start();
