@@ -1,9 +1,5 @@
 var loadState = {
 	preload: function(){
-		game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-		game.scale.pageAlignHorizontally = true;
-		game.scale.pageAlignVertically = true;
-	
 		game.physics.startSystem(Phaser.Physics.ARCADE);
 	
 		var loadingLabel = game.add.text(game.world.centerX,150,'LOADING...',{font:'15px emulogic',fill:'#fff'});

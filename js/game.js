@@ -1,5 +1,9 @@
-var game = new Phaser.Game(400,600,Phaser.AUTO);
-
+var game = new Phaser.Game(400,600,Phaser.CANVAS);
+	game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+	game.scale.pageAlignHorizontally = true;
+	game.scale.pageAlignVertically = true;
+	
+	
 	game.global = {
 		highScore: 0
 	};
