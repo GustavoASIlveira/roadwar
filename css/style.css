@@ -11,15 +11,7 @@
 
 .hiddenText{
 	visibility: hidden;
-	font-family: emulogic;
-	position: absolute;
-}
-
-#gameContainer{
-	width: 400px;
-	height: 600px;
-	position: relative;
-	margin: 10px auto;
+	display: none;
 }
 
 body{
